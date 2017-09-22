@@ -97,9 +97,9 @@ export default class CreditCardInput extends Component {
     this.EXPIRY_INPUT_WIDTH = this.CVC_INPUT_WIDTH;
     this.CARD_NUMBER_INPUT_WIDTH_OFFSET = 40;
     this.CARD_NUMBER_INPUT_WIDTH = fullWidth - this.EXPIRY_INPUT_WIDTH - this.CARD_NUMBER_INPUT_WIDTH_OFFSET;
-    this.NAME_INPUT_WIDTH = this.CARD_NUMBER_INPUT_WIDTH - this.PREVIOUS_FIELD_OFFSET;
     this.PREVIOUS_FIELD_OFFSET = 40;
     this.POSTAL_CODE_INPUT_WIDTH = 120;
+    this.NAME_INPUT_WIDTH = fullWidth - this.POSTAL_CODE_INPUT_WIDTH - this.PREVIOUS_FIELD_OFFSET;
   }
 
   componentDidMount = () => this._focus(this.props.focused);
