@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 import ReactNative, {
   NativeModules,
   View,
@@ -8,7 +8,7 @@ import ReactNative, {
   Dimensions,
   TextInput,
 } from "react-native";
-
+import PropTypes from 'prop-types';
 import CreditCard from "./CardView";
 import CCInput from "./CCInput";
 import { InjectedProps } from "./connectToState";
