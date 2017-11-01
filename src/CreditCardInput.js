@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactNative, {
   NativeModules,
   View,
+  ViewPropTypes,
   Text,
   StyleSheet,
   ScrollView,
@@ -38,10 +39,10 @@ export default class CreditCardInput extends Component {
     labels: PropTypes.object,
     placeholders: PropTypes.object,
 
-    containerStyle: View.propTypes.style,
+    containerStyle: ViewPropTypes.style,
     labelStyle: Text.propTypes.style,
     inputStyle: Text.propTypes.style,
-    inputContainerStyle: View.propTypes.style,
+    inputContainerStyle: ViewPropTypes.style,
 
     validColor: PropTypes.string,
     invalidColor: PropTypes.string,
